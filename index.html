@@ -1,1 +1,160 @@
-"GM Fren" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description", content="My Website">
+    <meta name="author" content="Emma-Luisa Richter">
+
+    <title> My Website </title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+
+
+</head>
+<body>
+    <button id="toggle-snow" style="position: absolute; top: 10px; right: 10px; z-index: 10;">Toggle Snow</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <div id="particles-js"></div>
+    <script src="snow.js"></script>
+    <div class="navbar-left">I like... </div>
+    <nav class="navbar" aria-label="Main navigation">
+        
+        
+        <ul>
+            <li><a href="#matcha" id="toggle-theme">Matcha</a></li>
+            <li><a href="#art">Art</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#Martial">Martial Arts</a></li>
+            
+        </ul>
+        <a href="#" class="logo">E</a>
+        
+        <ul >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <script>
+        let lastScrollY = window.scrollY;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                // scrolling down
+                navbar.classList.add('hidden');
+            } else {
+                // scrolling up
+                navbar.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            const navLists = document.querySelectorAll('.navbar ul');
+            navLists.forEach((ul) => ul.classList.toggle('active'));
+        }
+
+    </script>
+    <script src="toggle-themes.js"></script>
+
+    <script>
+        // mobile menu toggle functionality
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+
+        <div class="main" id="home">
+            <h1>&lt;CODER&gt; & &lt;AI ENGINEER&gt; </h1>
+            <p>I'm Emma-Luisa Richter. A a programmer and AI engineer from Germany. I write AI applications in Python and play around with open-source LLMs. </p>
+            <div class="GM" id="about">
+                
+                <div class="me1">
+                    <img src="./images/about_me.jpg" alt="me" style="filter: brightness(95.9%) grayscale(100%) hue-rotate(40deg);"> 
+                </div>
+                <div class="GM-text">
+                    <h4>GM FREN!</h4>
+                    <h3>I'M EMMA</h3>
+                    <p><small>Yep, that's me, the girl on the left. <br>
+                    I am a German girl studying IT security, but my goal is to work in the field of AI. 
+                    <br> <br>
+                    I love waking up at early, sitting down in front of my laptop with a cup of matcha, and starting to work. Yes I know that sounds a little weird to some, but before you judge, maybe try it out yourself. It feels really great, I promise.
+                    </small>
+                    </p>
+                </div><!--GM-text--> 
+            </div><!--GM-->       
+        </div><!--main--> 
+    </div>
+    <div class="skills-container" id="skills">
+        <div class="title">&lt;MY SKILLS&gt;</div>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>PYTHON: <span style="font-size: 20px;">ML</span></h3>
+                <p>Creating classic machine learning algorithms like regressions or classifications.</p>
+                <p style="font-size: 12px;">Scikit-learn, PyTorch</p>
+            </div>
+            <div class="skill-box">
+                <h3>PYTHON: <span style="font-size: 20px;">NLP</span></h3>
+                <p>Fine-tuning natural langiage processing models for specific tasks like text classification or named entity recognition.</p>
+                <p style="font-size: 12px;">SpaCy, NLTK, Transformers</p>
+            </div>
+            <div class="skill-box">
+                <h3>PYTHON: <span style="font-size: 20px;">AI</span></h3>
+                <p>Building artificial inteligence applications like chatbots with open-source LLMs and integrated RAG-systems.</p>
+                <p style="font-size: 12px;">LangChain, FastAI, Chroma, Transformers, FastAPI</p>
+            </div>
+            <div class="skill-box">
+                <h3>HTML / CSS</h3>
+                <p>Building websites like this one.</p>
+            </div>
+            <div class="skill-box">
+                <h3>PHP</h3>
+                <p>Basic PHP knowledge for building WordPress plugins and using PHP with MySQL.</p>
+            </div>
+            <div class="skill-box">
+                <h3>JavaScript</h3>
+                <p>Beginner knowledge for handling simple events and creating responsive design as well as server functionality.</p>
+            </div>
+        </div>
+    </div>
+        
+    <section class="proj_sec" >
+        <div class="title">&lt;PROJECTS&gt;</h1>
+            <div class="coming_soon">
+                COMING SOON
+            </div>
+
+    </section>
+
+    <section class="end_sec" id="contact">
+        <div class="title">&lt;FIND ME AT&gt;</h1>
+        
+        <div class="follow">    
+        <ul style="list-style-type:none;">
+                <li>GitHub</li>
+                <li>𝕏</li>
+                <li>in</li>
+                <li>Nostr</li>
+            </ul>
+        </div>
+    </section>
+
+<footer>
+    <p style="color: rgba(128, 128, 128, 1);font-family: Poppins, sans-serif;margin-bottom:0pt;margin-top:150px; text-align: center;">Copyright © 2024 Emma-Luisa Richter</p>
+    <p style="color: rgba(128, 128, 128, 1);font-family: Poppins, sans-serif;margin-top:0pt; text-align: center;">self-coded</p>
+</footer>
+
+
+</body>
+</html>
