@@ -27,9 +27,9 @@
         
         <ul>
             <li><a href="#matcha" id="toggle-theme">Matcha</a></li>
-            <li><a href="#art">Art</a></li>
-            <li><a href="#code">Code</a></li>
-            <li><a href="#Martial">Martial Arts</a></li>
+            <li><a href="#art" id="art-theme">Art</a></li>
+            <li><a href="#code" id="code-theme">Code</a></li>
+            <li><a href="#martial" id="martial-theme">Martial Arts</a></li>
             
         </ul>
         <a href="#" class="logo">E</a>
@@ -77,11 +77,11 @@
 
         <div class="main" id="home">
             <h1>&lt;CODER&gt; & &lt;AI ENGINEER&gt; </h1>
-            <p>I'm Emma-Luisa Richter. A a programmer and AI engineer from Germany. I write AI applications in Python and play around with open-source LLMs. </p>
+            <p>I'm Emma-Luisa Richter. A a programmer and AI engineer from Germany. I write machine learning applications in Python and play around with open-source LLMs. </p>
             <div class="GM" id="about">
                 
                 <div class="me1">
-                    <img src="./images/about_me.jpg" alt="me" style="filter: brightness(95.9%) grayscale(100%) hue-rotate(40deg);"> 
+                    <img id="theme-image" src="./images/me2_gre2.png" alt="me" > 
                 </div>
                 <div class="GM-text">
                     <h4>GM FREN!</h4>
@@ -89,8 +89,9 @@
                     <p><small>Yep, that's me, the girl on the left. <br>
                     I am a German girl studying IT security, but my goal is to work in the field of AI. 
                     <br> <br>
-                    I love waking up at early, sitting down in front of my laptop with a cup of matcha, and starting to work. Yes I know that sounds a little weird to some, but before you judge, maybe try it out yourself. It feels really great, I promise.
-                    </small>
+                    My passion is first and foremost programming and Machine Learning, but I also got other hobbies like karate and drawing.
+                    <br><br>I am currently employed at the university in Mittweida (DE) where I graduated from (B.Sc.). This is a project-based position to develop a chatbot tutoring system for blockchain education.
+                    I am mainly focusing on improvements such as optimizing the RAG system or creating ML models for better tool recognition.</small>
                     </p>
                 </div><!--GM-text--> 
             </div><!--GM-->       
@@ -101,8 +102,8 @@
         <div class="skills-grid">
             <div class="skill-box">
                 <h3>PYTHON: <span style="font-size: 20px;">ML</span></h3>
-                <p>Creating classic machine learning algorithms like regressions or classifications.</p>
-                <p style="font-size: 12px;">Scikit-learn, PyTorch</p>
+                <p>Creating machine learning models like a conditional-NER model for tool detection. I use this skill to solve problems in both my personal life and my job.</p>
+                <p style="font-size: 12px;">Scikit-learn, PyTorch, SpaCy, NLTK, Transformers</p>
             </div>
             <div class="skill-box">
                 <h3>PYTHON: <span style="font-size: 20px;">NLP</span></h3>
@@ -111,16 +112,16 @@
             </div>
             <div class="skill-box">
                 <h3>PYTHON: <span style="font-size: 20px;">AI</span></h3>
-                <p>Building artificial inteligence applications like chatbots with open-source LLMs and integrated RAG-systems.</p>
-                <p style="font-size: 12px;">LangChain, FastAI, Chroma, Transformers, FastAPI</p>
+                <p>Building and improving artificial inteligence applications like chatbots with open-source LLMs and integrated RAG-systems. This is the main task in my current job.</p>
+                <p style="font-size: 12px;">LangChain, FastAI, ChromaDB, Qdrant, Transformers, FastAPI, Ollama</p>
             </div>
             <div class="skill-box">
                 <h3>HTML / CSS</h3>
-                <p>Building websites like this one.</p>
+                <p>Building websites like this one. This is more of a hobby.</p>
             </div>
             <div class="skill-box">
                 <h3>PHP</h3>
-                <p>Basic PHP knowledge for building WordPress plugins and using PHP with MySQL.</p>
+                <p>Basic PHP knowledge for building WordPress plugins and using PHP with MySQL. I acquired this skill in my current job.</p>
             </div>
             <div class="skill-box">
                 <h3>JavaScript</h3>
@@ -128,6 +129,31 @@
             </div>
         </div>
     </div>
+
+    <section class="research_sec" >
+        <div class="title">&lt;RESEARCH&gt;</h1>
+            
+            <div class="recent_research">
+            I recently presented at <span class="highlight">NWK25</span>, a local conference for young researchers from various universities, and it was a cool experience. <br>I shared my work titled "Evaluation of Prompt Engineering Techniques as a Replacement for Traditional NLP in an Educational Chatbot Assistant for Blockchain Technology." I know, it's a complex title, and the concepts are even more intricate, but here is the short version: <br><br>
+In essence, my research covered whether <span class="highlight">Prompt Engineering</span> — crafting specific instructions for AI models — could fully replace classic <span class="highlight">Natural Language Processing (NLP)</span> techniques, like training ML models for classification tasks. I tested this on my university's Blockchain Technology Education Chatbot and with different open-source Datasets. I built all with Python and libraries like SpaCy and Transformers. 
+<br><br>
+<div class="container">
+    <div class="research2">
+    The results? <span class="highlight">Prompt Engineering isn't the holy grail.</span> It's fast, flexible, and definitely shines for tasks like summarization, QA, and sentiment analysis. However, traditional NLP often outperforms in areas like classification and Named Entity Recognition (NER). For example, training a simple logistic regression model can be faster and more robust for detecting malicious user prompts (e.g., attempts to exploit LLMs) compared to relying solely on prompt engineering.
+    In any case, both methods - Prompt Engineering and NLP techniques - can enhace a chatbots capabilities if used correctly and in the right amount.
+    <br> <br><a href="https://www.forschung.hs-mittweida.de/news/aktuell/8699/" style="color:rgb(20, 148, 148)">Here</a> is another summary in german.
+
+    </div>
+    <div>
+        
+        <img src="./images/graph.png" alt="graph" style="filter: brightness(95.9%) hue-rotate(20deg);" class="graph"> 
+    </div>
+</div>
+
+
+</div>
+
+    </section>
         
     <section class="proj_sec" >
         <div class="title">&lt;PROJECTS&gt;</h1>
@@ -136,6 +162,8 @@
             </div>
 
     </section>
+
+    
 
     <section class="end_sec" id="contact">
         <div class="title">&lt;FIND ME AT&gt;</h1>

@@ -153,6 +153,41 @@ body {
    
 }
 
+.research_sec {
+    margin-top: 100px;
+
+}
+
+.highlight {
+    color: #d6c9dd; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+}
+
+.recent_research {
+    font-family: 'Poppins', serif;
+    font-size: 0.4em;
+    font-weight: 300;
+    margin: 70px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.container {
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      gap: 30px; 
+      margin: 0 auto; 
+    }
+
+.graph {
+  width: 350px; 
+  height: auto; 
+  float: right;
+}
+
 .main p {
     font-size: 1.8em;
     text-align: center;
@@ -238,7 +273,7 @@ h4 {
     font-weight: 300;    
 }
 
-.me1 {
+#theme-image{
     align-self: flex-start;
     position: absolute;
     top: 20px;
